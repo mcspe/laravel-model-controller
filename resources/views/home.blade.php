@@ -17,7 +17,7 @@
           <tr>
             <th scope="row">{{ $movie->title }}</th>
             <td>{{ $movie->vote }}</td>
-            <td><a href="{{ route('movie', ['id', $movie->id]) }}" class="btn btn-primary">More details</a></td>
+            <td><a href="{{ route('movie', ['id' => $movie->id]) }}" class="btn btn-primary">More details</a></td>
           </tr>
         @endforeach
       </tbody>

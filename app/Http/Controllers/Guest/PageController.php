@@ -19,7 +19,6 @@ class PageController extends Controller
 
     public function movie($id) {
         $movie = Movie::where('id', $id)->first();
-        dd($movie);
         return view('movie', compact('movie'));
     }
 }
