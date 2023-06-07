@@ -18,4 +18,4 @@ Route::get('/', [PageController::class, 'index'])->name('home');
 
 Route::get('/contacts', [PageController::class, 'contacts'])->name('contacts');
 
-Route::get('/movie', [PageController::class, 'movie'])->name('movie');
+Route::get('/movie/{id}', [PageController::class, 'movie'])->name('movie');

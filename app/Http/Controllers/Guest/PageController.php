@@ -17,7 +17,9 @@ class PageController extends Controller
         return view('contacts');
     }
 
-    public function movie() {
-        return view('movie');
+    public function movie($id) {
+        $movie = Movie::where('id', $id)->first();
+        dd($movie);
+        return view('movie', compact('movie'));
     }
 }

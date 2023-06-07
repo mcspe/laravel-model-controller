@@ -5,5 +5,5 @@
 @endsection
 
 @section('content')
-
+    @dd($movie)
 @endsection
