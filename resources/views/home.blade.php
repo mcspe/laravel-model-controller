@@ -1,0 +1,8 @@
+@extends('layouts.layout')
+
+
+@section('content')
+    <main>
+        <h1>HOME</h1>
+    </main>
+@endsection
