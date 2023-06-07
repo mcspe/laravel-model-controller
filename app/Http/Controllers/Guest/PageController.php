@@ -19,6 +19,9 @@ class PageController extends Controller
 
     public function movie($id) {
         $movie = Movie::where('id', $id)->first();
+        if(empty($movie)) {
+            abort(404);
+        }
         return view('movie', compact('movie'));
     }
 }
